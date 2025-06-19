@@ -1,0 +1,27 @@
+{
+  "name": "txt-syntax-highlighting",
+  "displayName": "TXT Syntax Highlighting",
+  "description": "Custom highlighting for TXT files",
+  "version": "0.0.1",
+  "publisher": "Juraj Strapec",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "txt",
+        "aliases": ["TXT"],
+        "extensions": [".txt"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "txt",
+        "scopeName": "source.txt",
+        "path": "./syntaxes/mysyntax.tmLanguage.json"
+      }
+    ]
+  }
+}
