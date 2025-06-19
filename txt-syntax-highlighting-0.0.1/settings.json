@@ -1,0 +1,71 @@
+{
+    "editor.fontSize": 18,
+    "files.defaultLanguage": "txt",
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "markup.heading",
+                "settings": {
+                    "foreground": "#FFA500",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "markup.list",
+                "settings": {
+                    "foreground": "#dd6edd",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "markup.warning",
+                "settings": {
+                    "foreground": "#FF0000",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "keyword",
+                "settings": {
+                    "foreground": "#00AAFF",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "markup.error",
+                "settings": {
+                    "foreground": "#FF0000",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "markup.success",
+                "settings": {
+                    "foreground": "#00CC00",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "markup.myspecial.note",
+                "settings": {
+                    "foreground": "#CE9178",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "markup.underline.section.note",
+                "settings": {
+                    "foreground": "#FFB347",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "markup.underline.link.custom",
+                "settings": {
+                    "foreground": "#3d6beb",
+                    "fontStyle": "underline"
+                }
+            }           
+        ]
+    }
+}
