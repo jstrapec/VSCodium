@@ -1,0 +1,41 @@
+{
+  "scopeName": "source.txt",
+  "patterns": [
+    {
+      "name": "markup.heading",
+      "match": "^\\*.*$"
+    },
+    {
+      "name": "keyword.control.todo",
+      "match": "\\bTODO\\b"
+    },
+    {
+      "name": "markup.list",
+      "match": "^\\+.*$"
+    },
+    {
+      "name": "markup.warning",
+      "match": "^!!!.*$"
+    },
+    {
+      "name": "markup.error",
+      "match": "(?i)\\b(ko|false|fail(ed|ing)?|disable\\w*|error\\w*)\\b"
+    },
+    {
+      "name": "markup.success",
+      "match": "(?i)\\b(ok|done|true|success\\w*|finish\\w*|accept\\w*|allow\\w*|enable\\w*)\\b"
+    },
+    {
+      "name": "markup.myspecial.note",
+      "match": "^\\s*(\\$|#|~>|>).*"
+    },
+    {
+      "name": "markup.underline.section.note",
+      "match": "^\\s*([=-])\\1{2,}\\s*$"
+    },
+    {
+      "name": "markup.underline.link.custom",
+      "match": "(https?://|www\\.)[\\w\\-\\.~:/?#\\[\\]@!$&'()*+,;=%]+"
+    }
+  ]
+}
