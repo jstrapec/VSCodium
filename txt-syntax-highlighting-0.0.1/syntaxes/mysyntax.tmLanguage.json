@@ -26,16 +26,21 @@
       "match": "(?i)\\b(ok|done|true|success\\w*|finish\\w*|accept\\w*|allow\\w*|enable\\w*)\\b"
     },
     {
-      "name": "markup.myspecial.note",
-      "match": "^\\s*(\\$|#|~>|>).*"
+      "name": "markup.shells.custom",
+      "begin": "(\\$|#|~>|>)",
+      "end": "$"
     },
     {
       "name": "markup.underline.section.note",
       "match": "^\\s*([=-])\\1{2,}\\s*$"
     },
     {
-      "name": "markup.underline.link.custom",
+      "name": "markup.underline.url.custom",
       "match": "(https?://|www\\.)[\\w\\-\\.~:/?#\\[\\]@!$&'()*+,;=%]+"
+    },
+    {
+      "name": "markup.path.custom",
+      "match": "((\\./|~/|/)[\\w\\-\\.~/]*)"
     }
   ]
 }
