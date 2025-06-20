@@ -46,9 +46,9 @@
                 }
             },
             {
-                "scope": "markup.myspecial.note",
+                "scope": "markup.shells.custom",
                 "settings": {
-                    "foreground": "#CE9178",
+                    "foreground": "#e6e91a",
                     "fontStyle": ""
                 }
             },
@@ -60,12 +60,19 @@
                 }
             },
             {
-                "scope": "markup.underline.link.custom",
+                "scope": "markup.underline.url.custom",
                 "settings": {
                     "foreground": "#3d6beb",
                     "fontStyle": "underline"
                 }
-            }           
+            },
+            {
+                "scope": "markup.underline.path.custom",
+                "settings": {
+                    "foreground": "#6084e7",
+                    "fontStyle": ""
+                }
+            }              
         ]
     }
 }
