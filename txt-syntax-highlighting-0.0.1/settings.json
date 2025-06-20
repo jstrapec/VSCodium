@@ -67,7 +67,7 @@
                 }
             },
             {
-                "scope": "markup.underline.path.custom",
+                "scope": "markup.path.custom",
                 "settings": {
                     "foreground": "#6084e7",
                     "fontStyle": ""
