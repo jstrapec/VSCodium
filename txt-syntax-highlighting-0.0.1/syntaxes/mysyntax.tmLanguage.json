@@ -27,7 +27,7 @@
     },
     {
       "name": "markup.shells.custom",
-      "begin": "(\\$|#|~>|>)",
+      "begin": "(\\$|#|~>|>)\\s",
       "end": "$"
     },
     {
