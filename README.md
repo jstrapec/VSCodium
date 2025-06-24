@@ -1,53 +1,64 @@
-## Install custom highlighting for VS codium (also compactible with VS Code)
+## Custom Syntax Highlighting for VS Codium (also compatible with VS Code)
 
-This is my custom extensions with simple highliting for notes. It applies as default language for unsaved files and for all .txt files. It is more suitable for dark themes.
+This extension provides simple, visually appealing syntax highlighting tailored for note-taking. It is set as the **default language for unsaved files** and for all `.txt` files.  
+**Note:** This highlighting is best viewed with a dark theme.
 
-Here is plain text:
+**Plain text:**
 
-![Demo screenshot](media/Text_without_highlighting.png)
+![Text without highlighting](media/Text_without_highlighting.png)
 
-and here is same text with highlighting:
+**With highlighting:**
 
-![Demo screenshot](media/Text_with_highlighting.png)
+![Text with highlighting](media/Text_with_highlighting.png)
+
+---
 
 ### Installation
 
-1. Download ZIP file. 
+1. **Download** the ZIP file from the repository.
+2. **Unzip** the archive.
+3. **Copy** the `txt-syntax-highlighting-0.0.1` directory into the extensions folder for your VS Codium installation:
 
-2. Unzip it. 
+    - **Deb or snap package:**  
+      `~/.vscode-oss/extensions/`
+    - **Flatpak:**  
+      `~/.var/app/com.vscodium.codium/data/vscode-oss/extensions/`
+    - **Windows:**  
+      `C:\Users\<YourUsername>\.vscode-oss\extensions\`
 
-3. Copy **txt-syntax-highlighting-0.0.1** directory to directory where VS Codium stores files for extensions
+    _Example:_  
+    ```sh
+    cp -r txt-syntax-highlighting-0.0.1 ~/.vscode-oss/extensions/
+    ```
 
-  - For app installed as deb package or as snap
-    ~/.vscode-oss/extensions/
+    **Tip:** For Visual Studio Code, use `.vscode` instead of `.vscode-oss` in the folder path.
 
-  - For app installed as flatpak
-    ~/.var/app/com.vscodium.codium/data/vscode-oss/extensions/
+4. **Customize colors:**  
+   Copy the `textMateRules` block from the provided `settings.json` into your own user settings:
+   - Open the Command Palette with `Ctrl+Shift+P`
+   - Type and select **"Open User Settings (JSON)"**
+   - Paste the rules, for example:
+     ```json
+     "editor.tokenColorCustomizations": {
+         "textMateRules": [
+             {
+                 "scope": "markup.heading",
+                 "settings": {
+                     "foreground": "#FFA500",
+                     "fontStyle": "bold"
+                 }
+             }
+             // ...other rules as needed
+         ]
+     }
+     ```
+   _A sample configuration for VS Codium is included in this repository._
 
-  - For Windows
-    C:\Users\<YourUsername>\.vscode-oss\extensions
+5. **Apply changes:**  
+   - Changes should take effect immediately.
+   - You can verify the extension is installed by pressing `Ctrl+Shift+X` to open the Extensions view.
+   - If the extension does not appear, restart VS Codium.
 
+---
 
-        `cp -r txt-syntax-highlighting-0.0.1 ~/.vscode-oss/extensions/`
-    
-    **Tip:** *For installation in VS Studio Code replace .vscode-oss with .vscode*
-
-4. Copy textMateRules from settings.json to your configuration. You can access it by pressing ctrl+shift+p and typing "Open User Settings (JSON)"
-
-````
-   "editor.tokenColorCustomizations": {
-        "textMateRules": [
-            {
-                "scope": "markup.heading",
-                "settings": {
-                    "foreground": "#FFA500",
-                    "fontStyle": "bold"
-                }
-                ...
-                ..
-                .
-````
-
-  There is also my preffred configuration for VS Codium.
-
-5. Changes should be applied immediatly. You can check if you see this extension between your installed extension by pressing ctrl+shift+x. If not restart VS codium.
+**Enjoy improved note-taking with custom syntax highlighting!**
