@@ -2,6 +2,13 @@
 
 This is my custom extensions for simple highliting for notes. It applies as default language for unsaved files and for all .txt files 
 
+Here is plain text
+![Demo screenshot](media/Text_with_highlighting.png)
+
+and here is same text with highlighting
+
+![Demo screenshot](media/Text_without_highlighting.png)
+
 ### Installation
 
 1. Download ZIP file. 
