@@ -1,6 +1,7 @@
 ## Custom Syntax Highlighting for VS Codium (also compatible with VS Code)
 
 This extension provides simple, visually appealing syntax highlighting tailored for note-taking. It is set as the **default language for unsaved files** and for all `.txt` files.  
+
 **Note:** This highlighting is best viewed with a dark theme.
 
 **Plain text:**
