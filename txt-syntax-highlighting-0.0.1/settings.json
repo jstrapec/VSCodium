@@ -1,5 +1,5 @@
 {
-    "editor.fontSize": 12,
+    "editor.fontSize": 14,
     "workbench.tips.enabled": false,
     "workbench.startupEditor": "none",
     "workbench.editor.enablePreview": true,
@@ -9,6 +9,7 @@
     "window.commandCenter": false,
     "workbench.layoutControl.enabled": false,
     "editor.tabSize": 2,
+    "editor.wordWrap": "on",
     "files.defaultLanguage": "txt",
     "editor.tokenColorCustomizations": {
         "textMateRules": [
