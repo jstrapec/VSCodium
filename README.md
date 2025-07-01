@@ -16,7 +16,7 @@ This extension provides simple, visually appealing syntax highlighting tailored 
 
 ### Installation
 
-1. **Download** the ZIP file from the repository.
+1. **Download** a snapshot of a repository's files as a zip file.
 2. **Unzip** the archive.
 3. **Copy** the `txt-syntax-highlighting-0.0.1` directory into the extensions folder for your VS Codium installation:
 
