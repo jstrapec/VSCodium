@@ -11,6 +11,7 @@
     "editor.tabSize": 2,
     "editor.wordWrap": "on",
     "files.defaultLanguage": "txt",
+    "window.openFilesInNewWindow": "on",
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
